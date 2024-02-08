@@ -16,3 +16,4 @@ app.listen(port, () => {
 });
 
 // export MYSQL_CONNECTION_STRING=mysql://username:password@host:port/database
+// Esto es solo un ejemplardo
