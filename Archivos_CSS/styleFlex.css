@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+}
+
+body {
+    padding-top: 70px;
+    min-width: 280px;
+}
+
+/* Esto es parte del header */
+
+.header {
+    height: 65px;
+    width: 100%;
+    background-color: rgb(238, 240, 247);
+    box-shadow: 0 0 5px 0px #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.container-nav > i {
+    display: none;
+    font-size: 30px;
+}
+
+.titulo {
+    display: inline-block;
+    margin: 0 0 5px 30px;
+}
+
+.titulo > h1 {
+    color: #ee0000;
+}
+
+.nav__a {
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb(36, 36, 167);
+}
+
+/* Esto es parte del contenedor que contendra toda la informacion */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Esto es parte del section-article */
+
+.container-information {
+    width: 55%;
+    padding: 10px;
+    min-width: 345px;
+}
+
+.contenedor-img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contenedor-img > img{
+    width: 100%;
+}
+
+.title-article {
+    color: rgb(21, 100, 146); 
+    font-weight: 500;
+}
+
+.first-seccion > article {
+    margin-top: 30px;
+}
+
+.paragraph-article {
+    margin-top: 10px;
+}
+
+/* Esto es parte del aside */
+
+.aside-container {
+    width: 39%;
+    flex-shrink: 4;
+    min-width: 234px;
+    /* max-width: 500px; */
+}
+
+.aside-information {
+    padding: 10px;
+    flex-basis: 100%;
+    position: sticky;
+    top: 70px;
+}
+
+.new-information {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+aside > div > div > img {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    
+    /* Esto es parte del header */
+    
+    .header {
+        justify-content: space-around;
+        height: 57px;
+        flex-direction: row-reverse;
+    }
+
+    .titulo {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-nav > i {
+        display: block;
+    }
+
+    .container-nav {
+        margin-left: 15px;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        padding: 10px;
+        width: 115px;
+        background-color: rgb(246, 248, 250);
+    }
+
+    .nav__a {
+        margin: 0;
+        color: rgb(74, 74, 212);
+    }
+
+    .nav__a:hover {
+        color: rgb(40, 8, 199);
+    }
+
+    .container-nav:hover {
+        cursor: pointer;
+    }
+
+    .container-nav:active .nav {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 614px) {
+
+    /* Esto es parte del section-article */
+
+    .container-information {
+        min-width: 0;
+        width: 100%;
+    }
+
+    /* Esto es parte del aside */
+
+    .aside-container {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .aside-information {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    
+    /* Esto es parte del header */
+
+    .titulo {
+        font-size: 14px;
+    }
+
+    .container-nav > i {
+        font-size: 25px;        
+    }
+}
